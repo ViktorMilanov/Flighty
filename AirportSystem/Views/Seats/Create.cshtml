@@ -1,0 +1,44 @@
+﻿@model Create
+    <body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+        <div class="vertical">
+            <h1>Create Seats</h1>
+            <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+                <form id="seats-wrapper" method="post" asp-controller="Seats" asp-action="Create" asp-route-flId="@Model.FlightId">
+                    <div id="seats" class="submit">
+                    </div>
+                    <button class="buttonColor blackBorder" type="submit">Submit</button>
+                    <button class="buttonColor blackBorder" type="button" id="add-seat">Add Seat</button>
+                </form>
+            </div>
+            <script>
+            let seatsAdded = 0;
+            const seats = document.querySelector('#seats-wrapper #seats');
+            const getNewSeatHtml = () => {
+                return `<div>
+                    <select name="flight[${seatsAdded}][row]" placeholder="Enter Row">
+                        @for (int i = 1; i <= Model.Row; i++)
+                        {
+                            <option label="@i" value="@i" />
+                        }
+                    </select>
+                    <select name="flight[${seatsAdded}][col]" placeholder="Enter Col">
+                        @for (int i = 65; i <= Model.Col + 64; i++)
+                        {
+                            <option>@(((char)i))</option>
+                        }
+                    </select>
+                    <select name="flight[${seatsAdded}][class]">
+                        <option label="Economy" value="Economy" />
+                        <option label="Business" value="Business" />
+                        <option label="First" value="First" />
+                    </select>
+                       <hr>
+                </div>`
+            };
+            document.querySelector('button#add-seat').addEventListener('click', () => {
+                seatsAdded = seatsAdded + 1;
+                seats.insertAdjacentHTML('beforeend', getNewSeatHtml())
+            })
+            </script>
+</div>
+</body>

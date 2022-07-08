@@ -1,0 +1,47 @@
+﻿@model AirportWithoutId
+
+@{
+    ViewData["Title"] = "Delete";
+}
+<body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+    <div class="vertical">
+
+        <h2>Are you sure you want to delete this?</h2>
+
+        <div>
+            <hr />
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                    :
+                    @Html.DisplayFor(model => model.Name)
+                    <br>
+                </dt>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Address)
+                    :
+                    @Html.DisplayFor(model => model.Address)
+                    <br>
+                </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.City)
+                    :
+                    @Html.DisplayFor(model => model.City)
+                    <br>
+                </dt>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Country)
+                    :
+                    @Html.DisplayFor(model => model.Country)
+                    <br>
+                </dt>
+            </dl>
+
+            <form asp-action="Delete">
+                <input type="submit" value="Delete" class="btn btn-danger" />
+                <button class="btn btn-primary"><a asp-action="Index">Back to List</a></button>
+            </form>
+        </div>
+</div>
+</body>

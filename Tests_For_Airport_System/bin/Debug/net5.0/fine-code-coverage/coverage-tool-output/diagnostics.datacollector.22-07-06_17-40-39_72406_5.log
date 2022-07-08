@@ -1,0 +1,640 @@
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.806, 14565197808242, datacollector.dll, Version: 17.1.0-release-20220113-05
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.814, 14565197855289, datacollector.dll, DataCollectorMain.Run: Starting data collector run with args: --port,58531,--parentprocessid,17460,--diag,C:\Users\Viktor Milanov\Documents\exercises-2021\Viktor\Final_Project\AirportSystem\Tests_For_Airport_System\bin\Debug\net5.0\fine-code-coverage\coverage-tool-output\diagnostics.datacollector.22-07-06_17-40-39_72406_5.log,--tracelevel,4
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.815, 14565197857744, datacollector.dll, DataCollector: Monitoring parent process with id: '17460'
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.821, 14565197919880, datacollector.dll, Trying to connect to server on socket : 127.0.0.1:58531 
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.827, 14565197978460, datacollector.dll, SocketCommunicationManager : SetupClientAsync : Attempting to connect to the server.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:39.834, 14565198051203, datacollector.dll, Connected to the server successfully 
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:39.834, 14565198051809, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.884, 14565198554205, datacollector.dll, DataCollector: Start Request Processing.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.887, 14565198581251, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.BeforeTestRunStart) -> {
+  "SettingsXml": "<RunSettings><RunConfiguration><ResultsDirectory>C:\\Users\\Viktor Milanov\\Documents\\exercises-2021\\Viktor\\Final_Project\\AirportSystem\\Tests_For_Airport_System\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory><TargetPlatform>X64</TargetPlatform><TargetFrameworkVersion>.NETCoreApp,Version=v5.0</TargetFrameworkVersion><DesignMode>False</DesignMode><CollectSourceInformation>False</CollectSourceInformation><TestAdaptersPaths>C:\\Program Files\\dotnet\\sdk\\6.0.203\\Extensions</TestAdaptersPaths></RunConfiguration><LoggerRunSettings><Loggers><Logger friendlyName=\"blame\" enabled=\"True\" /><Logger friendlyName=\"Console\" uri=\"logger://microsoft/TestPlatform/ConsoleLogger/v1\" assemblyQualifiedName=\"Microsoft.VisualStudio.TestPlatform.CommandLine.Internal.ConsoleLogger, vstest.console, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a\" codeBase=\"C:\\Program Files\\dotnet\\sdk\\6.0.203\\vstest.console.dll\" enabled=\"True\" /></Loggers></LoggerRunSettings><DataCollectionRunSettings><DataCollectors><DataCollector friendlyName=\"blame\" enabled=\"True\"><Configuration><ResultsDirectory>C:\\Users\\Viktor Milanov\\Documents\\exercises-2021\\Viktor\\Final_Project\\AirportSystem\\Tests_For_Airport_System\\bin\\Debug\\net5.0\\fine-code-coverage\\coverage-tool-output</ResultsDirectory></Configuration></DataCollector></DataCollectors></DataCollectionRunSettings></RunSettings>",
+  "Sources": [
+    "C:\\Users\\Viktor Milanov\\Documents\\exercises-2021\\Viktor\\Final_Project\\AirportSystem\\Tests_For_Airport_System\\bin\\Debug\\net5.0\\fine-code-coverage\\build-output\\Tests_For_Airport_System.dll"
+  ],
+  "IsTelemetryOptedIn": false
+}
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.917, 14565198886764, datacollector.dll, TestPluginCache: Update extensions started. Skip filter = False
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.918, 14565198892431, datacollector.dll, TestPluginCache: Using directories for assembly resolution 'C:\Program Files\dotnet\sdk\6.0.203\Extensions'.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.918, 14565198892965, datacollector.dll, TestPluginCache: Updated the available extensions to 'C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.927, 14565198980711, datacollector.dll, TestPluginCache.DiscoverTestExtensions: finding test extensions in assemblies ends with: Collector.dll TPluginInfo: Microsoft.VisualStudio.TestPlatform.Common.DataCollector.DataCollectorConfig TExtension: Microsoft.VisualStudio.TestPlatform.ObjectModel.DataCollection.DataCollector
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.927, 14565198982837, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.927, 14565198983450, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.927, 14565198983862, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.928, 14565198991051, datacollector.dll, AssemblyResolver.ctor: Creating AssemblyResolver with searchDirectories C:\Program Files\dotnet\sdk\6.0.203\Extensions,C:\Program Files\dotnet\sdk\6.0.203
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.929, 14565199004393, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using extension path.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.929, 14565199005972, datacollector.dll, TestPluginCache.GetExtensionPaths: Filtered extension paths: C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.929, 14565199006528, datacollector.dll, TestPluginCache.GetExtensionPaths: Added default extension paths: 
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.929, 14565199006955, datacollector.dll, TestPluginCache.GetExtensionPaths: Added unfilterableExtensionPaths: 
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.930, 14565199007624, datacollector.dll, TestPluginCache.DiscoverTestExtensions: Discovering the extensions using allExtensionPaths: C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.930, 14565199008719, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\6.0.203\Extensions,C:\Program Files\dotnet\sdk\6.0.203
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.930, 14565199009348, datacollector.dll, AssemblyResolver.AddSearchDirectories: Adding more searchDirectories C:\Program Files\dotnet\sdk\6.0.203\Extensions,C:\Program Files\dotnet\sdk\6.0.203
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.930, 14565199013629, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Resolving assembly.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.930, 14565199014503, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Searching in: 'C:\Program Files\dotnet\sdk\6.0.203\Extensions'.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.931, 14565199019483, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.BlameDataCollector: Loading assembly 'C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll'.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.931, 14565199024136, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.BlameDataCollector, from path: C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll
+TpTrace Error: 0 : 8880, 1, 2022/07/06, 17:40:39.935, 14565199059969, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.936, 14565199069106, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Resolving assembly.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.936, 14565199069567, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Searching in: 'C:\Program Files\dotnet\sdk\6.0.203\Extensions'.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.936, 14565199072031, datacollector.dll, AssemblyResolver.OnResolve: Microsoft.TestPlatform.Extensions.EventLogCollector: Loading assembly 'C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.936, 14565199075097, datacollector.dll, AssemblyResolver.OnResolve: Resolved assembly: Microsoft.TestPlatform.Extensions.EventLogCollector, from path: C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll
+TpTrace Error: 0 : 8880, 1, 2022/07/06, 17:40:39.937, 14565199085658, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.EventLogCollector.EventLogDataCollector" defined in "Microsoft.TestPlatform.Extensions.EventLogCollector.dll" does not have ExtensionUri attribute.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.938, 14565199087901, datacollector.dll, TestPluginCache: Discovered the extensions using extension path 'C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.BlameDataCollector.dll,C:\Program Files\dotnet\sdk\6.0.203\Extensions\Microsoft.TestPlatform.Extensions.EventLogCollector.dll'.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.938, 14565199088317, datacollector.dll, TestPluginCache: Discoverers are ''.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.938, 14565199088573, datacollector.dll, TestPluginCache: Executors are ''.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.938, 14565199088851, datacollector.dll, TestPluginCache: Executors2 are ''.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.938, 14565199089067, datacollector.dll, TestPluginCache: Setting providers are ''.
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:39.938, 14565199089271, datacollector.dll, TestPluginCache: Loggers are ''.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.939, 14565199099191, datacollector.dll, TestPluginManager.CreateTestExtension: Attempting to load test extension: Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Error: 0 : 8880, 1, 2022/07/06, 17:40:39.939, 14565199101518, datacollector.dll, The type "Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector" defined in "Microsoft.TestPlatform.Extensions.BlameDataCollector.dll" does not have ExtensionUri attribute.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.943, 14565199139542, datacollector.dll, Listening on Endpoint : 127.0.0.1:58533
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.949, 14565199205488, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection started.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:39.965, 14565199365307, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.TestHostLaunched) -> {
+  "ProcessId": 12660
+}
+TpTrace Information: 0 : 8880, 5, 2022/07/06, 17:40:40.141, 14565201119916, datacollector.dll, Using the buffer size of 16384 bytes
+TpTrace Information: 0 : 8880, 5, 2022/07/06, 17:40:40.141, 14565201120766, datacollector.dll, Accepted Client request and set the flag
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:40.599, 14565205705565, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:40.606, 14565205775106, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:40.607, 14565205778135, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingAirlineShouldBeSuccessful1 - 9473c415-3b44-bd02-db74-d0313f1c0599' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.208, 14565211792752, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.211, 14565211823678, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.213, 14565211845342, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingAirlineShouldBeSuccessful1 - 9473c415-3b44-bd02-db74-d0313f1c0599' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.223, 14565211942104, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.223, 14565211944926, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.223, 14565211946246, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingNullShouldThrowException - 58f08757-ebbb-96af-ee0d-db8e82a154c7' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.224, 14565211951815, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.224, 14565211954627, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.224, 14565211956056, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingNullShouldThrowException - 58f08757-ebbb-96af-ee0d-db8e82a154c7' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.225, 14565211961696, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.225, 14565211963764, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.225, 14565211964610, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingSameAirlineTwoTimesShouldThrowException - dd8f2889-7827-c9d8-f7da-6635dcafc8ae' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.228, 14565211991897, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.228, 14565211993781, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.228, 14565211994679, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingSameAirlineTwoTimesShouldThrowException - dd8f2889-7827-c9d8-f7da-6635dcafc8ae' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.229, 14565212001039, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.229, 14565212002417, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.229, 14565212003416, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldCreateRightAirline - 3cd3b7b2-9e67-5fa8-90f4-ae4fd708c01a' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.231, 14565212022262, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.231, 14565212023838, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.231, 14565212024681, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldCreateRightAirline - 3cd3b7b2-9e67-5fa8-90f4-ae4fd708c01a' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.232, 14565212030754, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.232, 14565212032410, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.232, 14565212033371, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - 00245f50-085a-02fc-afae-f4ca6be0a5fa' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.236, 14565212069313, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.236, 14565212071522, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.236, 14565212072366, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - 00245f50-085a-02fc-afae-f4ca6be0a5fa' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.237, 14565212077729, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.237, 14565212079047, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.237, 14565212079750, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteAirlineShouldDeleteItRight - 1fa2f969-5e64-4040-784d-c2208f27b0d5' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.307, 14565212786648, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.308, 14565212788881, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.308, 14565212789874, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteAirlineShouldDeleteItRight - 1fa2f969-5e64-4040-784d-c2208f27b0d5' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.308, 14565212794905, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.308, 14565212796362, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.308, 14565212797114, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditingAirlineShouldEditItRight - 8584be30-a10a-a82a-c4c7-7501eaba4b83' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.321, 14565212925497, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.322, 14565212928148, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.322, 14565212929282, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditingAirlineShouldEditItRight - 8584be30-a10a-a82a-c4c7-7501eaba4b83' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.322, 14565212934295, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.322, 14565212935648, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.322, 14565212936400, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldEditRightAirline - efe1b86d-7c41-1fe6-7235-dd674d9de272' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.323, 14565212939891, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.323, 14565212941077, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.323, 14565212941776, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldEditRightAirline - efe1b86d-7c41-1fe6-7235-dd674d9de272' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.323, 14565212946853, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.324, 14565212948029, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.324, 14565212948677, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnNotFoundIfIndexDidntExist - f7a92067-2f8c-fc3a-a637-f4a7f60f229a' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.324, 14565212951678, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.324, 14565212952833, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.324, 14565212953508, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnNotFoundIfIndexDidntExist - f7a92067-2f8c-fc3a-a637-f4a7f60f229a' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.350, 14565213216095, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.351, 14565213218135, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.351, 14565213219018, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnViewIfIndexExist - 5accb5a5-3abc-b2de-98f1-c7b0f256955f' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.351, 14565213223947, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.351, 14565213225311, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.351, 14565213226588, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnViewIfIndexExist - 5accb5a5-3abc-b2de-98f1-c7b0f256955f' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.352, 14565213231532, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.352, 14565213234692, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.352, 14565213235822, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingAllAirlinesShouldReturnAllAirlineThatAreInDB - 2dbeceed-5cee-a2c8-35b8-718e8fc96dd5' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.353, 14565213242408, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.353, 14565213244790, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.353, 14565213245946, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingAllAirlinesShouldReturnAllAirlineThatAreInDB - 2dbeceed-5cee-a2c8-35b8-718e8fc96dd5' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.354, 14565213254398, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.354, 14565213257344, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.355, 14565213258377, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingExistingAirlineShouldReturnRightAirline - ef488f20-2b16-447c-8c51-c48a4c4f2b98' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.358, 14565213296765, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.359, 14565213299665, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.359, 14565213301325, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingExistingAirlineShouldReturnRightAirline - ef488f20-2b16-447c-8c51-c48a4c4f2b98' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.360, 14565213309150, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.360, 14565213311695, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.360, 14565213312604, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingNotExistingAirlineShouldReturnNull - f8e83b4c-7b0f-4780-f1ee-739abf8853c7' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.361, 14565213317700, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.361, 14565213318930, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.361, 14565213319686, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingNotExistingAirlineShouldReturnNull - f8e83b4c-7b0f-4780-f1ee-739abf8853c7' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.361, 14565213325388, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.361, 14565213326453, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.361, 14565213327162, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - 3cf74ebc-af4f-143f-4d63-9f606b78bc94' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.362, 14565213330692, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.362, 14565213331815, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.362, 14565213332585, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - 3cf74ebc-af4f-143f-4d63-9f606b78bc94' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.362, 14565213336840, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.363, 14565213338882, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.363, 14565213339970, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisNameAlreadyExistMethodShouldReturnJsonResult - d3c84894-6e32-94b0-6962-b662e82ee233' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.365, 14565213357817, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.365, 14565213360288, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.365, 14565213361635, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisNameAlreadyExistMethodShouldReturnJsonResult - d3c84894-6e32-94b0-6962-b662e82ee233' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.366, 14565213369168, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.366, 14565213370972, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.366, 14565213371807, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightAirline - 0cfc91a6-8752-39f1-0ede-1221791b9d52' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.366, 14565213375842, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.366, 14565213377088, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.367, 14565213377900, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightAirline - 0cfc91a6-8752-39f1-0ede-1221791b9d52' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.367, 14565213382511, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.367, 14565213383768, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.367, 14565213384505, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - 737be417-2cde-5770-062d-6ce70a905bac' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.368, 14565213388223, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.368, 14565213389402, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.368, 14565213390178, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - 737be417-2cde-5770-062d-6ce70a905bac' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.368, 14565213394615, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.368, 14565213395764, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.368, 14565213396464, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirlineWithThatNameAlready - a4f83b7e-e625-2004-ee35-80a337983bfd' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.369, 14565213400263, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.369, 14565213401456, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.369, 14565213402232, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirlineWithThatNameAlready - a4f83b7e-e625-2004-ee35-80a337983bfd' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.370, 14565213417247, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.371, 14565213418927, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.371, 14565213419766, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 947c995a-6a16-2dae-1e13-4bc44244b5bc' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.371, 14565213424210, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.371, 14565213425447, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.371, 14565213426254, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 947c995a-6a16-2dae-1e13-4bc44244b5bc' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.372, 14565213430858, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.372, 14565213432028, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.372, 14565213432719, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - 11ed584e-92d3-f7e6-3c63-f277d64cab39' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.372, 14565213436421, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.372, 14565213437592, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.373, 14565213438370, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - 11ed584e-92d3-f7e6-3c63-f277d64cab39' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.373, 14565213442818, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.373, 14565213444653, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.373, 14565213445416, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirlineWithThatNameAlready - cd91c4e4-2376-605f-5573-66db5a2a7904' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.374, 14565213449261, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.374, 14565213450426, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.374, 14565213451192, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirlineWithThatNameAlready - cd91c4e4-2376-605f-5573-66db5a2a7904' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.374, 14565213455726, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.374, 14565213456914, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.374, 14565213457638, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenExistingIndexShouldReturnRightModelWithoutId - 6a757d0f-4687-bfd2-c250-eba5ea4acfd5' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.375, 14565213462622, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.375, 14565213464085, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.375, 14565213464933, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenExistingIndexShouldReturnRightModelWithoutId - 6a757d0f-4687-bfd2-c250-eba5ea4acfd5' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.376, 14565213470822, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.376, 14565213472960, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.376, 14565213474039, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenNotExistingIndexShouldReturnNull - 8d6dda7e-7487-c8cd-cee6-9517c03711f2' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.377, 14565213479660, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.377, 14565213481015, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.377, 14565213481841, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenNotExistingIndexShouldReturnNull - 8d6dda7e-7487-c8cd-cee6-9517c03711f2' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.378, 14565213496993, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.379, 14565213499417, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.379, 14565213500698, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingFlightShouldBeSuccessful - 4034fa40-17c2-220a-9332-6a8e29d0917f' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.425, 14565213957834, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.425, 14565213959896, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.425, 14565213960872, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingFlightShouldBeSuccessful - 4034fa40-17c2-220a-9332-6a8e29d0917f' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.425, 14565213965839, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.425, 14565213967173, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.426, 14565213967898, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodReturnErrorWhenLandingDateIsEarlierThanTakeoff - 566bde1f-2f7b-7912-0dd2-42dd1b574685' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.438, 14565214087844, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.438, 14565214089706, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.438, 14565214090654, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodReturnErrorWhenLandingDateIsEarlierThanTakeoff - 566bde1f-2f7b-7912-0dd2-42dd1b574685' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.438, 14565214094885, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.438, 14565214096096, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.438, 14565214096753, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodReturnErrorWhenTwoAirportsAreSame - 2e323d3f-049f-ff45-9289-b3d36b39589f' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.439, 14565214099603, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.439, 14565214100732, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.439, 14565214101418, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodReturnErrorWhenTwoAirportsAreSame - 2e323d3f-049f-ff45-9289-b3d36b39589f' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.439, 14565214105118, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.439, 14565214106193, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.439, 14565214106792, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldCreateRightAirline - 238b3b2b-e6ef-3855-0926-dcc14558e63d' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.440, 14565214109571, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.440, 14565214110628, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.440, 14565214111273, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldCreateRightAirline - 238b3b2b-e6ef-3855-0926-dcc14558e63d' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.441, 14565214120855, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.441, 14565214122534, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.441, 14565214123285, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - d277ea3a-bb53-835f-03f8-d85fa96cbef6' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.441, 14565214126954, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.442, 14565214128163, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.442, 14565214128898, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - d277ea3a-bb53-835f-03f8-d85fa96cbef6' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.442, 14565214132617, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.442, 14565214133779, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.442, 14565214134416, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteFlightShouldBeSuccessful - 4e8ac65b-a934-94b6-d298-47f311d80a37' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.446, 14565214175761, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.446, 14565214177074, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.447, 14565214177827, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteFlightShouldBeSuccessful - 4e8ac65b-a934-94b6-d298-47f311d80a37' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.447, 14565214181393, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.447, 14565214182725, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.447, 14565214183353, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditedFlightsShouldRemoveUnwantedSeats - 3b9da2f1-9851-f5dd-440b-81443c98f983' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.479, 14565214501352, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.479, 14565214503454, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.479, 14565214504454, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditedFlightsShouldRemoveUnwantedSeats - 3b9da2f1-9851-f5dd-440b-81443c98f983' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.480, 14565214508584, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.480, 14565214509924, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.480, 14565214510667, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllAirlinesShouldReturnAllAirlinesNames - 2996b49a-3c36-11df-477e-52a56c56b1ab' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.480, 14565214514041, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.480, 14565214515289, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.480, 14565214516038, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllAirlinesShouldReturnAllAirlinesNames - 2996b49a-3c36-11df-477e-52a56c56b1ab' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.481, 14565214519841, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.481, 14565214521031, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.481, 14565214521694, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllAirportsShouldReturnAllAirportsIds - 1e6855da-136e-ab0f-fe29-dca2c003fb13' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.481, 14565214524944, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.481, 14565214526138, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.481, 14565214526863, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllAirportsShouldReturnAllAirportsIds - 1e6855da-136e-ab0f-fe29-dca2c003fb13' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.482, 14565214530575, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.482, 14565214531783, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.482, 14565214532669, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllMethodShouldReturnAllFlights - 1b27624c-716a-abb2-004d-6ca1ac9e3d23' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.495, 14565214661034, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.495, 14565214663076, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.495, 14565214664097, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllMethodShouldReturnAllFlights - 1b27624c-716a-abb2-004d-6ca1ac9e3d23' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.496, 14565214668511, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.496, 14565214669771, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.496, 14565214670559, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldGetReturnNullWhenThereIsntSuchAFlight - 14949ec5-dd36-c247-4a57-1c82d64a2a78' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.500, 14565214709585, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.500, 14565214710915, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.500, 14565214711907, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldGetReturnNullWhenThereIsntSuchAFlight - 14949ec5-dd36-c247-4a57-1c82d64a2a78' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.500, 14565214717189, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.501, 14565214718419, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.501, 14565214719185, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldGetRightFlightAndTransformItToFlightDeleteModel - 7098a400-e2f4-ab87-34cd-658d0ecc8512' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.511, 14565214817929, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.511, 14565214819707, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.511, 14565214820685, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldGetRightFlightAndTransformItToFlightDeleteModel - 7098a400-e2f4-ab87-34cd-658d0ecc8512' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.511, 14565214825487, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.511, 14565214826835, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.512, 14565214827707, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IfThisDateIsPassedMethodShouldReturnJsonResult - 2f99bdf3-0340-9876-3a53-e7bde222a666' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.512, 14565214831371, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.512, 14565214832895, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.512, 14565214833715, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IfThisDateIsPassedMethodShouldReturnJsonResult - 2f99bdf3-0340-9876-3a53-e7bde222a666' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.513, 14565214842848, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.513, 14565214844301, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.513, 14565214845162, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - 07486459-7a9b-e76e-ea8e-0aab02a75e18' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.514, 14565214849455, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.514, 14565214850849, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.514, 14565214851707, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - 07486459-7a9b-e76e-ea8e-0aab02a75e18' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.514, 14565214856477, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.515, 14565214857891, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.515, 14565214858690, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MethodForDataValidationShouldReturnFalseWhenDateIsPassed - d5fe766e-70af-8dde-2e57-402fb808e6d4' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.515, 14565214863116, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.515, 14565214864474, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.515, 14565214865304, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MethodForDataValidationShouldReturnFalseWhenDateIsPassed - d5fe766e-70af-8dde-2e57-402fb808e6d4' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.516, 14565214870084, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.516, 14565214871339, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.516, 14565214872527, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MethodForDataValidationShouldReturnTrueWhenDateIstPassed - 106083fc-bb88-3e8e-b1ae-0f6e34e4d7c5' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.516, 14565214876456, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.517, 14565214877719, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.517, 14565214878526, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'MethodForDataValidationShouldReturnTrueWhenDateIstPassed - 106083fc-bb88-3e8e-b1ae-0f6e34e4d7c5' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.517, 14565214883297, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.517, 14565214884516, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.517, 14565214885304, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchFlightShouldReturnListWithRightFlights - 1a631c7d-c016-b703-4cb8-14190ef765d8' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.545, 14565215164011, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.545, 14565215166460, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.545, 14565215167542, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchFlightShouldReturnListWithRightFlights - 1a631c7d-c016-b703-4cb8-14190ef765d8' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.546, 14565215172808, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.546, 14565215174079, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.546, 14565215174870, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchForSpecificFlightShouldReturnRightViewWhenThereIsSuchAFlight - 9134b52c-3fbe-d2cc-3df3-4bf8fe7a844e' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.547, 14565215184101, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.547, 14565215185414, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.547, 14565215186405, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchForSpecificFlightShouldReturnRightViewWhenThereIsSuchAFlight - 9134b52c-3fbe-d2cc-3df3-4bf8fe7a844e' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.548, 14565215190907, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.548, 14565215193419, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.548, 14565215194558, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchForSpecificFlightShouldReturnViewWhenCountOfPeopleAreLessThanOne - a34066ec-c55e-4e7a-3cea-3e5ee76367da' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.549, 14565215198585, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.549, 14565215200058, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.549, 14565215200886, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchForSpecificFlightShouldReturnViewWhenCountOfPeopleAreLessThanOne - a34066ec-c55e-4e7a-3cea-3e5ee76367da' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.549, 14565215205672, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.549, 14565215206987, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.550, 14565215207787, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchForSpecificFlightShouldReturnViewWhenThereIsntSuchAFlight - ef827f77-2f52-c1b5-5c5b-87ddaedca07c' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.550, 14565215211673, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.550, 14565215212916, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.550, 14565215213711, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchForSpecificFlightShouldReturnViewWhenThereIsntSuchAFlight - ef827f77-2f52-c1b5-5c5b-87ddaedca07c' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.551, 14565215218181, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.551, 14565215219407, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.551, 14565215220145, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchMethodShouldReturnActionResult - 612620a8-3c12-7f89-c87b-c6f033c5d216' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.551, 14565215223949, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.551, 14565215225235, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.551, 14565215226052, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'SearchMethodShouldReturnActionResult - 612620a8-3c12-7f89-c87b-c6f033c5d216' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.552, 14565215230490, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.552, 14565215231723, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.552, 14565215232450, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightFlight - 64710572-85bb-d786-e996-8ef7f5fa4c77' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.552, 14565215236182, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.552, 14565215237386, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.553, 14565215238212, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightFlight - 64710572-85bb-d786-e996-8ef7f5fa4c77' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.553, 14565215247634, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.554, 14565215249011, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.554, 14565215249735, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - a845cd62-6ec2-b821-1c07-aaa8286d6927' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.554, 14565215254199, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.554, 14565215256033, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.554, 14565215257159, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - a845cd62-6ec2-b821-1c07-aaa8286d6927' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.555, 14565215262169, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.555, 14565215263974, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.555, 14565215264886, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 3d232cac-131d-4768-f06e-3457b8324fba' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.556, 14565215269123, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.556, 14565215271101, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.556, 14565215272277, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 3d232cac-131d-4768-f06e-3457b8324fba' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.556, 14565215276764, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.557, 14565215278090, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.557, 14565215278810, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - 7802db33-f0d4-038e-7a30-416a1e810b65' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.557, 14565215283079, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.557, 14565215285248, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.557, 14565215286439, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - 7802db33-f0d4-038e-7a30-416a1e810b65' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.558, 14565215291667, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.558, 14565215293175, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.558, 14565215293910, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ToListModelShouldTransformFlightsToListModel - a08cba7a-26bd-ed09-3ad0-f3c2e2199f14' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.559, 14565215298153, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.559, 14565215300325, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.559, 14565215301517, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ToListModelShouldTransformFlightsToListModel - a08cba7a-26bd-ed09-3ad0-f3c2e2199f14' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.559, 14565215307480, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.560, 14565215308727, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.560, 14565215309472, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'BookShouldWorkProperly - 84389f5d-ca57-b92a-56b2-8f32d05ea260' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.572, 14565215435202, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.572, 14565215437115, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.573, 14565215438172, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'BookShouldWorkProperly - 84389f5d-ca57-b92a-56b2-8f32d05ea260' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.573, 14565215442881, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.573, 14565215444247, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.573, 14565215445021, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - d1e5075c-1ebd-f83e-24f6-16c56f5d82c8' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.582, 14565215529912, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.582, 14565215531818, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.582, 14565215532848, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - d1e5075c-1ebd-f83e-24f6-16c56f5d82c8' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.582, 14565215537543, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.583, 14565215538897, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.583, 14565215539679, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteShouldWorkProperly - d0575574-b62f-f3e5-645f-e4c1cfb51531' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.585, 14565215559932, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.585, 14565215562171, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.585, 14565215563114, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteShouldWorkProperly - d0575574-b62f-f3e5-645f-e4c1cfb51531' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.585, 14565215567693, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.586, 14565215568899, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.586, 14565215569564, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllMethodShouldReturnAllSeats - b0a747b4-686d-8f97-e76e-c29b1dce86ac' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.587, 14565215578111, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.587, 14565215579432, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.587, 14565215580240, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetAllMethodShouldReturnAllSeats - b0a747b4-686d-8f97-e76e-c29b1dce86ac' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.587, 14565215585998, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.588, 14565215588208, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.588, 14565215589284, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldReturnNullIfThereIsntSeat - 32df07ed-781f-eaba-314c-20fc1e95407c' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.592, 14565215632278, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.592, 14565215634097, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.592, 14565215635057, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldReturnNullIfThereIsntSeat - 32df07ed-781f-eaba-314c-20fc1e95407c' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.594, 14565215647776, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.594, 14565215649982, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.594, 14565215651081, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldWorkProperly - 319e484a-cfe6-2d41-34cb-b81a8062a7a7' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.596, 14565215668836, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.596, 14565215670381, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.596, 14565215671788, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetForDeleteShouldWorkProperly - 319e484a-cfe6-2d41-34cb-b81a8062a7a7' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.597, 14565215678668, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.597, 14565215681109, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.597, 14565215681948, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetRowsMethodShouldReturnCountOfCols - 52a788c7-7601-503d-8561-03ca20710380' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.597, 14565215685967, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.600, 14565215708477, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.600, 14565215709765, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetRowsMethodShouldReturnCountOfCols - 52a788c7-7601-503d-8561-03ca20710380' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.600, 14565215714503, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.600, 14565215715657, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.600, 14565215716390, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetRowsMethodShouldReturnCountOfRows - edf15832-6bbb-b59c-2046-b3dc4b9ff34c' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.601, 14565215719853, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.601, 14565215720929, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.601, 14565215721686, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GetRowsMethodShouldReturnCountOfRows - edf15832-6bbb-b59c-2046-b3dc4b9ff34c' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.601, 14565215726706, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.602, 14565215727782, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.602, 14565215728467, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - 53e229f3-e768-a3a2-c6be-bbbcd5788eab' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.602, 14565215732242, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.602, 14565215733281, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.602, 14565215734001, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - 53e229f3-e768-a3a2-c6be-bbbcd5788eab' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.604, 14565215754732, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.604, 14565215756042, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.604, 14565215756781, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldBookRightSeat - 14a19aa0-6e81-dfbc-262d-b45984279c1e' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.605, 14565215760452, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.605, 14565215761456, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.605, 14565215762174, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldBookRightSeat - 14a19aa0-6e81-dfbc-262d-b45984279c1e' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.605, 14565215766173, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.605, 14565215767149, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.606, 14565215767803, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightSeat - 90ecf6e7-47c5-24ba-93c8-be3d6d1a85f7' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.606, 14565215771093, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.606, 14565215772047, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.606, 14565215772787, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightSeat - 90ecf6e7-47c5-24ba-93c8-be3d6d1a85f7' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.606, 14565215776696, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.606, 14565215777646, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.607, 14565215778293, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - 9fcf301f-5fbd-28be-dede-f8bcae4b012d' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.607, 14565215784255, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.607, 14565215785249, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.607, 14565215785955, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - 9fcf301f-5fbd-28be-dede-f8bcae4b012d' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.608, 14565215790506, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.608, 14565215791462, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.608, 14565215792109, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnInBookActionResultIfIdExist - ed60abb4-07cd-fd08-9bb6-641526a3488e' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.609, 14565215797880, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.609, 14565215798861, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.609, 14565215799547, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnInBookActionResultIfIdExist - ed60abb4-07cd-fd08-9bb6-641526a3488e' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.609, 14565215803479, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.609, 14565215804432, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.609, 14565215805077, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnInBookNotFoundIfIdDidntExist - cc286831-07b7-7178-19a0-1fa20bd6408f' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.610, 14565215808314, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.610, 14565215809258, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.610, 14565215809930, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnInBookNotFoundIfIdDidntExist - cc286831-07b7-7178-19a0-1fa20bd6408f' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.611, 14565215819563, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.611, 14565215820818, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.611, 14565215821533, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnInBookNotFoundIfIdIsNull - 1cb018ec-2e34-fb5d-4c55-7438684b2fb7' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.611, 14565215825262, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.611, 14565215826331, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.611, 14565215827095, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnInBookNotFoundIfIdIsNull - 1cb018ec-2e34-fb5d-4c55-7438684b2fb7' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.612, 14565215832079, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.612, 14565215834157, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.612, 14565215835524, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 3bd883d3-756e-4153-dc8a-056bb786ad6a' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.613, 14565215840227, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.613, 14565215841586, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.613, 14565215842379, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 3bd883d3-756e-4153-dc8a-056bb786ad6a' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.613, 14565215847044, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.614, 14565215848124, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.614, 14565215848839, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - 0cc33cb6-75ad-2943-90d4-9b2999d5aa35' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.614, 14565215852523, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.614, 14565215853585, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.614, 14565215854333, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - 0cc33cb6-75ad-2943-90d4-9b2999d5aa35' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.615, 14565215859163, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.615, 14565215860220, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.615, 14565215861149, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingAirportShouldBeSuccessful1 - 94274f71-4d8a-58eb-d897-8f6e08dec055' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.617, 14565215880662, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.617, 14565215881856, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.617, 14565215882648, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingAirportShouldBeSuccessful1 - 94274f71-4d8a-58eb-d897-8f6e08dec055' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.617, 14565215887022, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.618, 14565215888130, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.618, 14565215888843, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingNullShouldThrowException - 20cfd5ef-a887-cbe1-b497-47ae739d7b92' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.618, 14565215892776, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.618, 14565215893849, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.618, 14565215894644, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingNullShouldThrowException - 20cfd5ef-a887-cbe1-b497-47ae739d7b92' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.619, 14565215898810, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.619, 14565215899863, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.619, 14565215900788, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingSameAirportTwoTimesShouldThrowException - e61d5f5e-7309-7195-9497-4a22dce8d3c1' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.619, 14565215904394, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.619, 14565215905478, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.619, 14565215906254, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'AddingSameAirportTwoTimesShouldThrowException - e61d5f5e-7309-7195-9497-4a22dce8d3c1' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.620, 14565215910531, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.620, 14565215911589, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.620, 14565215912291, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldCreateRightAirport - 87b87dba-6b54-a62e-de80-e364ecd6c91f' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.620, 14565215915866, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.620, 14565215917073, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.621, 14565215917832, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldCreateRightAirport - 87b87dba-6b54-a62e-de80-e364ecd6c91f' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.621, 14565215922106, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.621, 14565215923136, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.621, 14565215923821, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - 3187aa5e-c92e-94ff-aa15-3613fb963d0f' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.621, 14565215927264, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.622, 14565215928303, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.622, 14565215929028, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'CreateMethodShouldReturnActionView - 3187aa5e-c92e-94ff-aa15-3613fb963d0f' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.622, 14565215933249, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.622, 14565215934352, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.622, 14565215935036, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteAirportShouldDeleteItRight - 9221d0d7-50d8-d45b-a481-09a38aceb649' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.624, 14565215957228, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.625, 14565215958307, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.625, 14565215959080, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'DeleteAirportShouldDeleteItRight - 9221d0d7-50d8-d45b-a481-09a38aceb649' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.626, 14565215968283, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.626, 14565215969382, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.626, 14565215970121, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditingAirportShouldEditItRight - f799616e-ab5d-cb84-c10c-1519b7b128f5' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.630, 14565216009170, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.630, 14565216010773, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.630, 14565216011651, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditingAirportShouldEditItRight - f799616e-ab5d-cb84-c10c-1519b7b128f5' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.630, 14565216016124, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.630, 14565216017284, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.631, 14565216018164, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldEditRightAirport - 046d5589-e412-a926-4e01-a280393665c4' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.631, 14565216022148, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.631, 14565216023310, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.631, 14565216023999, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldEditRightAirport - 046d5589-e412-a926-4e01-a280393665c4' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.633, 14565216041450, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.633, 14565216042535, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.633, 14565216043236, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnNotFoundIfIndexDidntExist - 2f0acfa6-d037-1b88-31d4-c54ea80ec93f' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.633, 14565216046794, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.634, 14565216047817, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.634, 14565216048532, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnNotFoundIfIndexDidntExist - 2f0acfa6-d037-1b88-31d4-c54ea80ec93f' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.634, 14565216052858, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.634, 14565216053864, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.634, 14565216054548, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnViewIfIndexExist - 7356fb6a-4a44-e41c-7e59-b748ff1468bf' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.635, 14565216057892, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.635, 14565216058904, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.635, 14565216059782, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'EditMethodShouldReturnViewIfIndexExist - 7356fb6a-4a44-e41c-7e59-b748ff1468bf' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.635, 14565216063938, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.635, 14565216064942, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.635, 14565216065627, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingAllAirportsShouldReturnAllAirportThatAreInDB - 0839bcef-6f1d-eb37-ff95-932949683bec' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.636, 14565216069002, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.636, 14565216070112, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.636, 14565216071159, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingAllAirportsShouldReturnAllAirportThatAreInDB - 0839bcef-6f1d-eb37-ff95-932949683bec' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.636, 14565216075193, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.636, 14565216076187, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.636, 14565216076866, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingExistingAirportShouldReturnRightAirport - 6d838855-974e-04d4-6f40-5b7a35b57839' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.637, 14565216080424, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.637, 14565216081425, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.637, 14565216082127, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingExistingAirportShouldReturnRightAirport - 6d838855-974e-04d4-6f40-5b7a35b57839' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.637, 14565216086136, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.637, 14565216087132, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.638, 14565216087810, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingNotExistingAirportShouldReturnNull - 289aaee3-c2b8-b433-8a8f-14335a5ea4bf' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.638, 14565216091390, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.638, 14565216092396, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.638, 14565216093107, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'GettingNotExistingAirportShouldReturnNull - 289aaee3-c2b8-b433-8a8f-14335a5ea4bf' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.638, 14565216097108, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.639, 14565216098097, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.639, 14565216098774, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - ba12b750-56bd-b0d3-c6b8-e4381b2f4e54' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.639, 14565216102313, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.639, 14565216103320, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.639, 14565216104163, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IndexMethodShouldReturnActionView - ba12b750-56bd-b0d3-c6b8-e4381b2f4e54' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.640, 14565216108504, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.640, 14565216109501, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.640, 14565216110295, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisAdressAlreadyExistMethodShouldReturnJsonResult - 80449134-8f2b-e3d6-308e-1b66a12328ae' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.640, 14565216113729, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.640, 14565216114738, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.640, 14565216115445, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisAdressAlreadyExistMethodShouldReturnJsonResult - 80449134-8f2b-e3d6-308e-1b66a12328ae' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.641, 14565216124631, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.641, 14565216125783, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.641, 14565216126497, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisIdAlreadyExistMethodShouldReturnJsonResult - 2880c3e7-0f40-f566-d308-80810455c7e4' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.642, 14565216130253, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.642, 14565216131294, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.642, 14565216132021, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisIdAlreadyExistMethodShouldReturnJsonResult - 2880c3e7-0f40-f566-d308-80810455c7e4' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.642, 14565216136276, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.642, 14565216137507, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.643, 14565216138197, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisNameAlreadyExistMethodShouldReturnJsonResult - 064e4307-e3c2-e1cb-3feb-0712c5593445' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.643, 14565216141808, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.643, 14565216142816, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.643, 14565216143536, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'IsThisNameAlreadyExistMethodShouldReturnJsonResult - 064e4307-e3c2-e1cb-3feb-0712c5593445' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.643, 14565216147561, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.644, 14565216148558, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.644, 14565216149238, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightAirport - 23ce77b1-f576-6456-ed08-e27b269b2d2a' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.644, 14565216153114, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.644, 14565216154321, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.644, 14565216155119, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldDeleteRightAirport - 23ce77b1-f576-6456-ed08-e27b269b2d2a' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.645, 14565216159300, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.645, 14565216160459, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.645, 14565216161210, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - 406d3e53-8faa-d7db-a56c-c7b05bb9aaef' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.645, 14565216164833, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.645, 14565216166442, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.645, 14565216167493, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnActionResultIfIdExist - 406d3e53-8faa-d7db-a56c-c7b05bb9aaef' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.646, 14565216173092, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.646, 14565216174690, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.646, 14565216175354, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirportWithThatAdressAlready - c82873c5-11f5-6827-e305-66e3e7e3d792' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.647, 14565216182677, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.647, 14565216184162, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.647, 14565216184903, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirportWithThatAdressAlready - c82873c5-11f5-6827-e305-66e3e7e3d792' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.648, 14565216189050, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.648, 14565216190195, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.648, 14565216190819, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirportWithThatIdAlready - 0290cd78-b51b-71a9-e231-57d5217bb18e' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.648, 14565216194118, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.648, 14565216195181, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.648, 14565216195936, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirportWithThatIdAlready - 0290cd78-b51b-71a9-e231-57d5217bb18e' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.649, 14565216200159, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.649, 14565216201182, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.649, 14565216201875, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirportWithThatNameAlready - 3831f13b-920c-872b-ac87-6d56d821accb' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.649, 14565216205319, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.649, 14565216206390, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.649, 14565216207144, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnFalseIfThereIsAirportWithThatNameAlready - 3831f13b-920c-872b-ac87-6d56d821accb' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.650, 14565216211216, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.650, 14565216212234, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.650, 14565216212926, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 4652b6c7-8c52-215d-0548-b75227e67672' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.650, 14565216216305, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.650, 14565216217337, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.651, 14565216218052, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdDidntExist - 4652b6c7-8c52-215d-0548-b75227e67672' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.651, 14565216222305, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.651, 14565216223342, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.651, 14565216224024, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - fbc9390a-691d-2f69-a60f-8fa7d02f7259' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.651, 14565216227507, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.652, 14565216228541, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.652, 14565216229358, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnNotFoundIfIdIsNull - fbc9390a-691d-2f69-a60f-8fa7d02f7259' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.653, 14565216238155, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.653, 14565216239334, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.653, 14565216240052, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirportWithThatAdressAlready - cb6408ac-5735-a062-882a-f7a83aa6c923' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.653, 14565216243746, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.653, 14565216244822, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.653, 14565216245471, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirportWithThatAdressAlready - cb6408ac-5735-a062-882a-f7a83aa6c923' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.654, 14565216249539, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.654, 14565216250887, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.654, 14565216251758, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirportWithThatIdAlready - 093a1785-2889-85a6-d128-9770c9039a59' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.654, 14565216255076, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.654, 14565216256102, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.654, 14565216256808, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirportWithThatIdAlready - 093a1785-2889-85a6-d128-9770c9039a59' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.655, 14565216260975, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.655, 14565216262102, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.655, 14565216262749, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirportWithThatNameAlready - 89cc7851-62b7-0067-bda9-e55721c32c6c' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.655, 14565216266279, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.655, 14565216267415, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.656, 14565216268095, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'ShouldReturnTrueIfThereIsntAirportWithThatNameAlready - 89cc7851-62b7-0067-bda9-e55721c32c6c' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.656, 14565216272399, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.656, 14565216273519, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.656, 14565216274163, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenExistingIndexShouldReturnRightModelWithoutId - 1749071b-eb55-8406-7949-1474d64348c8' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.656, 14565216277695, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.657, 14565216278826, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.657, 14565216279505, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenExistingIndexShouldReturnRightModelWithoutId - 1749071b-eb55-8406-7949-1474d64348c8' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.657, 14565216283793, datacollector.dll, DataCollectionTestCaseEventHandler: Test case starting.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.657, 14565216284921, datacollector.dll, Blame Collector : Test Case Start
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.657, 14565216285573, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenNotExistingIndexShouldReturnNull - e71eb67a-1f19-abdb-2444-0f3bd45ffca5' started.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.658, 14565216289087, datacollector.dll, DataCollectionTestCaseEventHandler : Test case completing.
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.658, 14565216290244, datacollector.dll, Blame Collector : Test Case End
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.658, 14565216290920, datacollector.dll, DataCollectionTestCaseEventHandler: Test case 'WhenIsGivenNotExistingIndexShouldReturnNull - e71eb67a-1f19-abdb-2444-0f3bd45ffca5' completed
+TpTrace Information: 0 : 8880, 8, 2022/07/06, 17:40:41.669, 14565216407325, datacollector.dll, DataCollectionTestCaseEventHandler: Test session ended
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.709, 14565216807504, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Datacollector received message: (DataCollection.AfterTestRunEnd) -> false
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.710, 14565216814014, datacollector.dll, Blame Collector : Session End
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.710, 14565216814451, datacollector.dll, BlameCollector.CollectDumpAndAbortTesthost: Custom path to dump directory was provided via VSTEST_DUMP_PATH. Skipping attachment upload, the caller is responsible for collecting and uploading the dumps themselves.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.710, 14565216815883, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins called
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:41.710, 14565216816449, datacollector.dll, DataCollectionManager.CleanupPlugins: Cleaning up 1 plugins
+TpTrace Verbose: 0 : 8880, 1, 2022/07/06, 17:40:41.711, 14565216817794, datacollector.dll, dataCollectorInfo.DisposeDataCollector: calling Dispose() on Microsoft.TestPlatform.Extensions.BlameDataCollector.BlameCollector
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.711, 14565216818556, datacollector.dll, DataCollectionManager.CleanupPlugins: CleanupPlugins finished
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.713, 14565216844156, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : Session End message received from server. Closing the connection.
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.713, 14565216846065, datacollector.dll, Closing the connection !
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.713, 14565216846509, datacollector.dll, DataCollectionRequestHandler.ProcessRequests : DataCollection completed
+TpTrace Information: 0 : 8880, 1, 2022/07/06, 17:40:41.713, 14565216846837, datacollector.dll, Program.Main: exiting datacollector process.

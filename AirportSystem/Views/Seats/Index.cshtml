@@ -1,0 +1,181 @@
+﻿@model IEnumerable<SeatIndexView>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+    <div class="vertical">
+        <h1>Seat </h1>
+        <p>
+            <button class="buttonForIndexView"><a asp-controller="Flights" asp-action="Index">Go Back To Flights</a></button>
+        </p>
+        @if (Model.FirstOrDefault(s => s.SeatClass == "Economy") != null)
+        {
+            <h4 class="format">Economy</h4>
+            <table class="table" style="width:80%">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Row)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Col)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SeatClass)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.isBooked)
+                        </th>
+                        <th style="width:30%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Where(s => s.SeatClass == "Economy"))
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Row)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Col)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SeatClass)
+                            </td>
+                            <td>
+                                @if (item.isBooked)
+                                {
+                                    <p style="color:orangered;">Booked</p>
+                                }
+                                else
+                                {
+                                    <p style="color:lightgreen;">Free</p>
+                                }
+                            </td>
+                            <td style="width:30%">
+                                <button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Delete" asp-route-id="@item.Id"> Delete Seat </a></button>
+                                @if (!item.isBooked)
+                                {
+                                    <span><button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Book" asp-route-id="@item.Id">Book Seat</a></button></span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        @if (Model.FirstOrDefault(s => s.SeatClass == "First") != null)
+        {
+            <h4 class="format">First</h4>
+            <table class="table" style="width:80%">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Row)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Col)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SeatClass)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.isBooked)
+                        </th>
+                        <th style="width:30%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Where(s => s.SeatClass == "First"))
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Row)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Col)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SeatClass)
+                            </td>
+                            <td>
+                                @if (item.isBooked)
+                                {
+                                    <p style="color:orangered;">Booked</p>
+                                }
+                                else
+                                {
+                                    <p style="color:lightgreen;">Free</p>
+                                }
+                            </td>
+                            <td style="width:30%">
+                                <button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Delete" asp-route-id="@item.Id"> Delete Seat </a></button>
+                                @if (!item.isBooked)
+                                {
+                                    <span><button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Book" asp-route-id="@item.Id">Book Seat</a></button></span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        @if (Model.FirstOrDefault(s => s.SeatClass == "Business") != null)
+        {
+            <h4 class="format">Business</h4>
+            <table class="table" style="width:80%">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Row)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Col)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.SeatClass)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.isBooked)
+                        </th>
+                        <th style="width:30%"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Where(s => s.SeatClass == "Business"))
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Row)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Col)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SeatClass)
+                            </td>
+                            <td>
+                                @if (item.isBooked)
+                                {
+                                    <p style="color:orangered;">Booked</p>
+                                }
+                                else
+                                {
+                                    <p style="color:lightgreen;">Free</p>
+                                }
+                            </td>
+                            <td style="width:30%">
+                                <button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Delete" asp-route-id="@item.Id"> Delete Seat </a></button>
+                                @if (!item.isBooked)
+                                {
+                                    <span><button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Book" asp-route-id="@item.Id">Book Seat</a></button></span>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+</div>
+</body>

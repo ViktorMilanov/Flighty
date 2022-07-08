@@ -1,0 +1,84 @@
+﻿@model FlightCreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<body style=" background-image: url(/Img/aip.png);background-attachment: fixed;">
+    <hr />
+    <div class="centerr">
+        <hr />
+        <hr />
+        <h1>Create Flight</h1>
+        <hr />
+        <div class="highter">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="TakeOff_Date" class="control-label"></label>
+                    <input asp-for="TakeOff_Date" class="form-control" />
+                    <span asp-validation-for="TakeOff_Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Landing_Date" class="control-label"></label>
+                    <input asp-for="Landing_Date" class="form-control" />
+                    @if (Model.Error == 1)
+                    {
+                        <p style="color: #dc3545 !important;">Landing date can't be before or same as takeoff date</p>
+                    }
+                </div>
+                <div class="form-group">
+                    <label asp-for="Rows" class="control-label"></label>
+                    <input asp-for="Rows" class="form-control" />
+                    <span asp-validation-for="Rows" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cols" class="control-label"></label>
+                    <input asp-for="Cols" class="form-control" />
+                    <span asp-validation-for="Cols" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="AirlineName" class="control-label"></label>
+                    <select asp-for="AirlineName" class="form-control">
+                        @foreach (var AirlineName in Model.AirlinesNames)
+                        {
+                            <option>@AirlineName</option>
+                        }
+                    </select>
+                    <span asp-validation-for="AirlineName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OriginAirportId" class="control-label"></label>
+                    <select asp-for="OriginAirportId" class="form-control">
+                        @foreach (var AirportId in Model.AirportsIds)
+                        {
+                            <option>@AirportId</option>
+                        }
+                    </select>
+                    <span asp-validation-for="OriginAirportId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DestinationAirportId" class="control-label"></label>
+                    <select asp-for="DestinationAirportId" class="form-control">
+                        @foreach (var AirportId in Model.AirportsIds)
+                        {
+                            <option>@AirportId</option>
+                        }
+                    </select>
+                    <span asp-validation-for="DestinationAirportId" class="text-danger"></span>
+                    @if (Model.Error == 2)
+                    {
+                        <p style="color: #dc3545 !important;">Can't have flight with same origin and destination airport</p>
+                    }
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <button class="btn btn-primary" style="margin-left:110px;"><a asp-action="Index">Back to List</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+    </body>

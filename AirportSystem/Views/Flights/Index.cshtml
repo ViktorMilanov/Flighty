@@ -1,0 +1,77 @@
+﻿@model IEnumerable<FlightListModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+    <div class="vertical">
+        <h1>Flights</h1>
+        <p>
+            <div>
+                <button class="buttonForIndexView"><a asp-action="Create">Create New</a></button>
+                <button class="buttonForIndexView"><a asp-action="Search">Search For Specific Flight</a></button>
+            </div>
+        </p>
+        <table class="table" style="width: 100%;">
+            <thead>
+                <tr>
+                    <th>
+                        Airline Name
+                    </th>
+                    <th>
+                        Origin Airport ID
+                    </th>
+                    <th>
+                        Destination Airport ID
+                    </th>
+                    <th>
+                        TakeOff Date
+                    </th>
+                    <th>
+                        Landing Date
+                    </th>
+                    <th>
+                        All Seats
+                    </th>
+                    <th>
+                        Free Seats
+                    </th>
+                    <th style="width: 30%;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AirlineName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.OriginAirportId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DestinationAirportId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.TakeOff_Date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Landing_Date)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.AllSeats)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FreeSeats)
+                        </td>
+                        <td style="width: 30%;">
+                            <button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Index" asp-route-flightId="@item.Id">All Seats</a></button>
+                            <button class="buttonForIndexView"><a asp-controller="Seats" asp-action="Create" asp-route-flightId="@item.Id">Create Seat</a></button>
+                            <button class="buttonForIndexView"><a asp-action="Delete" asp-route-id="@item.Id">Delete</a></button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>

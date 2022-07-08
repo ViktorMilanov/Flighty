@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Flighty";
+}
+    <div class="text-center">
+        <h1 class="display-4">Welcome To Flighty</h1>
+        <p>The best way to find a flight to your desired destination.</p>
+    </div>
+    <button class="btn_for_airport"><a class="nav-link text-dark" asp-area="" asp-controller="Airports" asp-action="Create"><span>Add Airport </span></a>
+    </button>
+    <button class="btn_for_airport">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Airlines" asp-action="Create"><span>Add Airline </span></a>
+    </button>
+    <button class="btn_for_airport">
+        <a class="nav-link text-dark" asp-area="" asp-controller="Flights" asp-action="Create"><span>Add Flight </span></a>
+    </button>

@@ -1,0 +1,41 @@
+create database if not exists airport_system;
+use airport_system;
+
+create table if not exists airport(
+id int auto_increment unique not null primary key,
+port_id varchar(3) unique not null,
+`name` varchar(64) unique not null,
+country varchar(32) not null,
+city varchar(32) unique not null,
+adress varchar(128) unique null
+);
+
+create table if not exists airline(
+id int auto_increment unique not null primary key,
+`name` varchar(32) unique not null
+);
+
+
+create table if not exists flight(
+id int auto_increment unique not null primary key,
+airline_id int not null,
+airport_origin_id int not null,
+airport_destination_id int not null,
+take_off_date datetime not null,
+landing_date datetime not null,
+`rows` int(20) unsigned not null,
+cols int(6) unsigned not null,
+constraint fk_airline_id foreign key (airline_id) references airline (id) on update cascade on delete cascade,
+constraint fk_origin_airport_id foreign key (airport_origin_id) references airport (id) on update cascade on delete cascade,
+constraint fk_destination_airport_id foreign key (airport_destination_id) references airport (id) on update cascade on delete cascade
+);
+
+create table if not exists seat(
+id int auto_increment unique not null primary key,
+`row` int(20) not null,
+col char not null,
+is_booked boolean not null,
+seat_class enum('Economy', 'Business', 'First') not null,
+flight_id int not null,
+constraint fk_flight_id foreign key (flight_id) references flight (id) on update cascade on delete cascade
+);

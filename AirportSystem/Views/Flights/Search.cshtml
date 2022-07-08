@@ -1,0 +1,61 @@
+﻿@model SearchModel
+
+@{
+    ViewData["Title"] = "Search";
+}
+<body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+    <div class="vertical">
+        <h1>Search For Specific Flight</h1>
+
+        <button class="btn btn-primary" style="width:150px; margin-top:25px;"><a asp-action="Index">Back to List</a></button>
+        <hr />
+        <div class="col-md-4">
+            <form asp-action="SearchForSpecificFlight">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    Origin Airport Id
+                    <select asp-for="OriginAirportId" class="form-control">
+                        @foreach (var AirportId in Model.AirportsIds)
+                        {
+                            <option>@AirportId</option>
+                        }
+                    </select>
+                    <span asp-validation-for="OriginAirportId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    Destination Airport Id
+                    <select asp-for="DestinationAirportId" class="form-control">
+                        @foreach (var AirportId in Model.AirportsIds)
+                        {
+                            <option>@AirportId</option>
+                        }
+                    </select>
+                    <span asp-validation-for="DestinationAirportId" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Date" class="control-label"></label>
+                    <input asp-for="Date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    People Who Will Take That Flight
+                    <input asp-for="CountOfPeopleWhoWillTakeTheFlight" class="form-control" />
+                    <span asp-validation-for="CountOfPeopleWhoWillTakeTheFlight" class="text-danger"></span>
+                    @if (Model.Error == 1)
+                    {
+                        <p style="color: #dc3545 !important;">People who will take that flight can't be less than 1</p>
+                    }
+                </div>
+                <div class="form-group">
+                    <input style="width:318px;" type="submit" value="Search For Specific Flight" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+        @section Scripts {
+            @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+        }
+
+</div>
+</body>

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<AirportSystem.Data.Airline>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+    <div class="vertical">
+        <h1>Airlines</h1>
+
+        <p>
+            <button class="buttonForIndexView"><a asp-action="Create">Create New</a></button>
+        </p>
+        <table class="table airline">
+            <thead>
+                <tr>
+                    <th style="width: 85%;">
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td style="width: 85%;">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            <button class="buttonForIndexView"><a asp-action="Edit" asp-route-id="@item.Id">Edit</a></button>
+                            <button class="buttonForIndexView"><a asp-action="Delete" asp-route-id="@item.Id">Delete</a></button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>

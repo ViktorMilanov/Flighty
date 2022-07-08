@@ -1,0 +1,39 @@
+﻿@model DeleteAndBookSeatModel
+
+@{
+    ViewData["Title"] = "Book";
+}
+<body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+    <div class="vertical">
+        <h2>Are you sure you want to book this?</h2>
+
+        <div>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-2">
+                    Row
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Row)
+                </dd>
+                <dt class="col-sm-2">
+                    Col
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Col)
+                </dd>
+                <dt class="col-sm-2">
+                    Class
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.SeatClass)
+                </dd>
+            </dl>
+
+            <form asp-action="Book">
+                <input type="submit" value="Book" class="btn btn-primary" />
+                <button class="btn btn-primary"><a asp-controller="Seats" asp-action="Index" asp-route-flightId="@Model.FlightID">Go Back To Seats</a></button>
+            </form>
+        </div>
+</div>
+</body>

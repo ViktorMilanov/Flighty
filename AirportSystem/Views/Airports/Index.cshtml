@@ -1,0 +1,63 @@
+﻿@model IEnumerable<AirportToDisplay>
+
+@{
+    ViewData["Title"] = "Airports";
+}
+<body style=" background-image: url(/Img/back2.png);background-attachment: fixed;background-repeat:no-repeat;">
+    <div class="vertical">
+        <h1>Airports</h1>
+
+        <p>
+            <button class="buttonForIndexView"><a asp-action="Create">Create New</a></button>
+        </p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        City
+                    </th>
+                    <th>
+                        Country
+                    </th>
+                    <th style="width: 15%;"></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Port_id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.city)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.country)
+                        </td>
+                        <td style="width: 15%;">
+                            <button class="buttonForIndexView"><a asp-action="Edit" asp-route-id="@item.Id">Edit</a></button>
+                            <button class="buttonForIndexView"><a asp-action="Delete" asp-route-id="@item.Id">Delete</a></button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+</div>
+</body>

@@ -1,0 +1,33 @@
+﻿@model AirlineToDisplay
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<body style=" background-image: url(/Img/aip.png);">
+    <hr />
+    <div class="cente">
+        <hr />
+        <hr />
+        <h1>Create Airline</h1>
+        <hr />
+        <div class="highter">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label"></label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary center-button" />
+                    <button class="btn btn-primary center-button" style="margin-left:130px;"><a asp-action="Index">Back to List</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</body>
