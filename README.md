@@ -1,1 +1,2 @@
-# Flighty
+This is Airport System project. In this application you can add, edit and remove flights, airlines and airplanes. Also every flight have selection of seats. Every seat has row number, col character and class which indicate in what seat class is this seat. There is three seat classes: First, Business and Economy. In files there is a .txt file with database script. Before run the app you must apply the script to you local database app. The database is with mysql syntax.
+I HOPE YOU WILL ENJOY THE APP! :)
